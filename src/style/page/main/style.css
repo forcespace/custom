@@ -1,0 +1,33 @@
+.grid {
+  display: flex;
+  height: 100vh;
+}
+.grid__block {
+  width: 50%;
+  height: 100%;
+  transition: 1s;
+  position: relative;
+}
+.grid__block_left {
+  background: #3e6d78;
+  left: 0;
+}
+.grid__block_left.active {
+  left: -100%;
+}
+.grid__block_right {
+  background: #e0e2ee;
+  right: 0;
+}
+.grid__block_right.active {
+  right: -100%;
+}
+
+.menu {
+  top: 25px;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+/*# sourceMappingURL=style.css.map */
