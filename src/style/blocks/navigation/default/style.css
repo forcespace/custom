@@ -29,11 +29,20 @@
   font-size: 30px;
   line-height: 1.5;
 }
+.navigation__list-wrapper {
+  display: grid;
+  overflow: hidden;
+  transition: grid-template-rows 0.3s;
+  grid-template-rows: 0fr;
+  grid-gap: 10px;
+}
+.navigation__list-wrapper.active {
+  grid-template-rows: 1fr;
+}
 .navigation__list {
   display: flex;
-  align-items: center;
   flex-direction: column;
-  justify-content: center;
+  min-height: 0;
   gap: 10px;
 }
 

@@ -33,11 +33,22 @@
         line-height: 1.5;
     }
 
+    &__list-wrapper {
+        display: grid;
+        overflow: hidden;
+        transition: grid-template-rows .3s;
+        grid-template-rows: 0fr;
+        grid-gap: 10px;
+
+        &.active {
+            grid-template-rows: 1fr;
+        }
+    }
+
     &__list {
         display: flex;
-        align-items: center;
         flex-direction: column;
-        justify-content: center;
+        min-height: 0;
         gap: 10px;
     }
 }

@@ -1,17 +1,21 @@
 document.addEventListener('DOMContentLoaded', () => {
-
+    setActiveNavigationList()
 })
 
-const ACTIVE_CLASS = 'active'
-
 const navigation = document.querySelector('.js-navigation')
-// const navigationList = navigation.querySelectorAll('.js-navigation-list')
+const navigationList = navigation.querySelectorAll('.js-navigation-list')
 const navigationListTitle = navigation.querySelectorAll('.js-navigation-list-title')
 
 const setActiveNavigationList = () => {
     navigationListTitle.forEach((element) => {
+        const dataAttributeValue = element.getAttribute('data-toggle')
+
         element.addEventListener('click', () => {
-            const navigationList = element.nextSibling
+            navigationList.forEach((element) => {
+                if (element.id === dataAttributeValue) {
+                    element.classList.toggle('active')
+                }
+            })
         })
     })
 }
