@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    setActiveMenuButton()
+    setMenuButtonStateOnClick()
 })
 
 const ACTIVE_CLASS = 'active'
@@ -16,13 +16,20 @@ const setAnimateBackgroundOnMainPage = (block) => {
     block.classList.toggle(ACTIVE_CLASS)
 }
 
-const setActiveMenuButton = () => {
-    menuButton.addEventListener('click', () => {
-        menuButton.classList.toggle(ACTIVE_CLASS)
-        menuButtonLine.classList.toggle(ACTIVE_CLASS)
+function toggleClassToBlocksOnPage() {
+    setAnimateBackgroundOnMainPage(rightBlock)
+    setAnimateBackgroundOnMainPage(leftBlock)
+}
 
-        setAnimateBackgroundOnMainPage(rightBlock)
-        setAnimateBackgroundOnMainPage(leftBlock)
+function toggleClassToMenuButton() {
+    menuButton.classList.toggle(ACTIVE_CLASS)
+    menuButtonLine.classList.toggle(ACTIVE_CLASS)
+}
+
+const setMenuButtonStateOnClick = () => {
+    menuButton.addEventListener('click', () => {
+        toggleClassToMenuButton()
+        toggleClassToBlocksOnPage()
     })
 }
 

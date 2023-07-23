@@ -1,21 +1,30 @@
 document.addEventListener('DOMContentLoaded', () => {
-    setActiveNavigationList()
+    setStateHiddenContent()
 })
 
-const navigation = document.querySelector('.js-navigation')
-const navigationList = navigation.querySelectorAll('.js-navigation-list')
-const navigationListTitle = navigation.querySelectorAll('.js-navigation-list-title')
+const setStateHiddenContent = () => {
+    setClickToTargetElements('js-navigation-list-link')
+}
 
-const setActiveNavigationList = () => {
-    navigationListTitle.forEach((element) => {
-        const dataAttributeValue = element.getAttribute('data-toggle')
+const setClickToTargetElements = (element) => {
+    const getActionElement = document.querySelectorAll(`.${element}`)
 
+    getActionElement.forEach((element) => {
         element.addEventListener('click', () => {
-            navigationList.forEach((element) => {
-                if (element.id === dataAttributeValue) {
-                    element.classList.toggle('active')
-                }
-            })
+            getTargetElements(element)
         })
     })
+}
+
+const getTargetElements = (element) => {
+    const dataAttributeValue = element.getAttribute('data-toggle')
+    const targetContentElement = document.querySelector(`#${dataAttributeValue}`)
+
+    if (dataAttributeValue && targetContentElement) {
+        toggleClassToTargetContentElement(targetContentElement)
+    }
+}
+
+const toggleClassToTargetContentElement = (targetContentElement) => {
+    targetContentElement.classList.toggle('active')
 }
