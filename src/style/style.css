@@ -1,6 +1,5 @@
 @import 'font/_euclid.css';
 @import 'font/_euclid.css';
-@import 'font/_euclid.css';
 * {
   margin: 0;
   padding: 0;
@@ -138,87 +137,6 @@ img {
 
 .active {
   display: block;
-}
-
-.time-line {
-  position: relative;
-}
-.time-line__wrapper {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-}
-.time-line::before {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 3px;
-  height: 3px;
-  margin: auto;
-  content: "";
-  border-radius: 50%;
-  background: #fff;
-}
-.time-line::after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 3px;
-  height: 3px;
-  margin: auto;
-  content: "";
-  border-radius: 50%;
-  background: #fff;
-}
-.time-line__line_all-progress {
-  display: block;
-  width: 100%;
-  height: 1px;
-  opacity: 0.2;
-  background: #fff;
-}
-.time-line__line_this-progress {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  height: 1px;
-  margin: auto;
-  content: "";
-  animation: pulsate-2 2s linear;
-  opacity: 1;
-  background: #fff;
-}
-@keyframes pulsate-2 {
-  0% {
-    left: -100%;
-  }
-  100% {
-    left: 0;
-  }
-}
-@-webkit-keyframes pulsate-2 {
-  0% {
-    left: -100%;
-  }
-  100% {
-    left: 0;
-  }
-}
-.time-line__line_month {
-  font-family: "Euclid Circular B Light", sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  position: absolute;
-  top: -25px;
-  right: 0;
-  left: 0;
-  width: max-content;
-  height: max-content;
-  margin: auto;
-  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

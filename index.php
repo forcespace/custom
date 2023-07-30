@@ -15,7 +15,7 @@
     <div class="header__navigation">
         <?php
         include 'src/php/block/menu/default/template.php';
-        include 'src/php/block/navigation/default/template.php'
+        include 'src/php/block/navigation/default/template.php';
         ?>
     </div>
 </header>

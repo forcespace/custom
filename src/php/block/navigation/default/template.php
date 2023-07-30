@@ -6,21 +6,7 @@
             </a>
             <div class="navigation__list-wrapper js-navigation-list" id="css">
                 <ul class="navigation__list">
-                    <li class="navigation__list-item">
-                        <a class="navigation__link navigation__link_list-item">
-                            Slider 1
-                        </a>
-                    </li>
-                    <li class="navigation__list-item">
-                        <a class="navigation__link navigation__link_list-item">
-                            Slider 2
-                        </a>
-                    </li>
-                    <li class="navigation__list-item">
-                        <a class="navigation__link navigation__link_list-item">
-                            Slider 3
-                        </a>
-                    </li>
+
                 </ul>
             </div>
         </div>
@@ -31,18 +17,8 @@
             <div class="navigation__list-wrapper js-navigation-list" id="css-js">
                 <ul class="navigation__list">
                     <li class="navigation__list-item">
-                        <a class="navigation__link navigation__link_list-item">
-                            Slider 1
-                        </a>
-                    </li>
-                    <li class="navigation__list-item">
-                        <a class="navigation__link navigation__link_list-item">
-                            Slider 2
-                        </a>
-                    </li>
-                    <li class="navigation__list-item">
-                        <a class="navigation__link navigation__link_list-item">
-                            Slider 3
+                        <a class="navigation__link navigation__link_list-item" href="src/php/page/popup">
+                            Popup
                         </a>
                     </li>
                 </ul>
@@ -54,21 +30,7 @@
             </a>
             <div class="navigation__list-wrapper js-navigation-list" id="css-js-php">
                 <ul class="navigation__list">
-                    <li class="navigation__list-item">
-                        <a class="navigation__link navigation__link_list-item">
-                            Slider 1
-                        </a>
-                    </li>
-                    <li class="navigation__list-item">
-                        <a class="navigation__link navigation__link_list-item">
-                            Slider 2
-                        </a>
-                    </li>
-                    <li class="navigation__list-item">
-                        <a class="navigation__link navigation__link_list-item">
-                            Slider 3
-                        </a>
-                    </li>
+
                 </ul>
             </div>
         </div>
@@ -79,18 +41,8 @@
             <div class="navigation__list-wrapper js-navigation-list" id="css-php">
                 <ul class="navigation__list">
                     <li class="navigation__list-item">
-                        <a class="navigation__link navigation__link_list-item">
-                            Slider 1
-                        </a>
-                    </li>
-                    <li class="navigation__list-item">
-                        <a class="navigation__link navigation__link_list-item">
-                            Slider 2
-                        </a>
-                    </li>
-                    <li class="navigation__list-item">
-                        <a class="navigation__link navigation__link_list-item">
-                            Slider 3
+                        <a class="navigation__link navigation__link_list-item" href="src/php/page/timeline">
+                            Time-line
                         </a>
                     </li>
                 </ul>

@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link href="../../../style/style.css" rel="stylesheet">
+    <link href="../../../style/blocks/time-line/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="body">
 <main>
     <section class="container">
         <?php
@@ -17,22 +18,13 @@
         $completed = (($current - $start) / ($end - $start)) * 100;
         ?>
 
-        <div class="stay">
-            <div class="stay__wrapper container">
-                <div class="stay__content">
-                    <div class="stay__time-line">
-                        <div class="time-line">
-                            <span class="time-line__line time-line__line_month">Прогресс</span>
-                            <div class="time-line__wrapper">
-                                <span class="time-line__line time-line__line_all-progress"></span>
-                                <span class="time-line__line time-line__line_this-progress" style="width: <?= $completed ?>%"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="time-line">
+            <span class="time-line__line time-line__line_month">Прогресс</span>
+            <div class="time-line__wrapper">
+                <span class="time-line__line time-line__line_all-progress"></span>
+                <span class="time-line__line time-line__line_this-progress" style="width: <?= $completed ?>%"></span>
             </div>
         </div>
-
     </section>
 </main>
 </body>
